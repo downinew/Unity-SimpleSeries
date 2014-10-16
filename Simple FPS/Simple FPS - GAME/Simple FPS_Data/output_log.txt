@@ -1,0 +1,19 @@
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Unity Projects\Simple FPS\Simple FPS - GAME\Simple FPS_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.079 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
