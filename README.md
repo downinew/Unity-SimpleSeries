@@ -1,4 +1,4 @@
 Unity-SimpleSeries
 ==================
 
-This Repository contains all of my  Simple Series of Unity games
+This Repository contains my series of Simple Unity Games
