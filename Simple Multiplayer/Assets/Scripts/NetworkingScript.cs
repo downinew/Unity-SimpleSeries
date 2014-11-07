@@ -15,6 +15,7 @@ public class NetworkingScript : MonoBehaviour {
 
 	void OnServerInitialized(){
 		Debug.Log("Dat shit initialized");
+        SpawnPlayer();
 	}
 
 	void OnMasterServerEvent( MasterServerEvent masterServerEvent)
@@ -45,6 +46,12 @@ public class NetworkingScript : MonoBehaviour {
             Debug.Log("Found dat shit");
 	}
 
+    private void SpawnPlayer()
+    {
+        Debug.Log("Spawning...");
+        Network.Instantiate(Resources.Load("Prefabs/SamplePlayer"), new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+    }
+
 
 	void OnGUI(){
 
@@ -68,6 +75,7 @@ public class NetworkingScript : MonoBehaviour {
                 if(GUI.Button(new Rect(Screen.width/2, 65f + (30f * i),300f, 30f), hostData[i].gameName))
                 {
                     Network.Connect(hostData[i]);
+                    Debug.Log("Dat Shit Connected");
                     
                 }
             }
