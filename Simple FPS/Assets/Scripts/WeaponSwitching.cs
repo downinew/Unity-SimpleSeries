@@ -16,7 +16,7 @@ public class WeaponSwitching : MonoBehaviour {
 		}
 	}
 
-
+    //Made a slight change
 	public void SwapWeapons(){
 		if (weapon01.activeSelf == true) 
 		{

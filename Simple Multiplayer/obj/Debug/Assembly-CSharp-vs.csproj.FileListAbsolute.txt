@@ -1,0 +1,11 @@
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\Assembly-CSharp.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\UnityEditor.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\UnityEngine.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\Mono.Cecil.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\nunit.framework.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\Unity.DataContract.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\obj\Debug\Assembly-CSharp.dll
+E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\obj\Debug\Assembly-CSharp.pdb
