@@ -6,6 +6,8 @@ public class NetworkingScript : MonoBehaviour {
 	string registerGameName = "Simple_Multiplayer_beginning_!@#$";
 	float refreshRequestLength = 3.0f;
 	HostData[] hostData;
+    public GameObject spawnPoint;
+
 
 	private void StartServer(){
 		//First is the numOfPlayers
@@ -49,7 +51,8 @@ public class NetworkingScript : MonoBehaviour {
     private void SpawnPlayer()
     {
         Debug.Log("Spawning...");
-        Network.Instantiate(Resources.Load("Prefabs/SamplePlayer"), new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+        Vector3 position = spawnPoint.transform.position;
+        Network.Instantiate(Resources.Load("Prefabs/SamplePlayer"), position, Quaternion.identity, 0);
     }
 
 
