@@ -18,11 +18,16 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
         cc = GetComponent<CharacterController>();
         playerTransform = cc.transform;
-        Screen.lockCursor = true;
+        //Screen.lockCursor = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (!networkView.isMine)
+        {
+            return;
+        }        
+
 
         simpleMovement();
 

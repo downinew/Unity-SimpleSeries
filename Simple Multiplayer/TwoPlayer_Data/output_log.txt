@@ -1,0 +1,135 @@
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.047 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Running as server. Player ID is 0.
+ 
+(Filename:  Line: 2484)
+
+Dat shit initialized
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Spawning...
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Allocating view ID AllocatedID: 1.
+
+ 
+(Filename:  Line: 2484)
+
+Allocating view ID AllocatedID: 2.
+
+ 
+(Filename:  Line: 2484)
+
+Sent RPC call '__RPCNetworkInstantiate' to all connected clients
+
+ 
+(Filename:  Line: 2484)
+
+Added RPC '__RPCNetworkInstantiate' to buffer.
+ 
+(Filename:  Line: 2484)
+
+Attempting to connect to master server at 67.225.180.24:23466
+ 
+(Filename:  Line: 2484)
+
+Connected to master server at 67.225.180.24:23466
+ 
+(Filename:  Line: 2484)
+
+Received identifier 0 from master server
+ 
+(Filename:  Line: 2484)
+
+Registration shit succeeded
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+New connection established (192.168.1.6:58706)
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for SceneID: 4 Level Prefix: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for SceneID: 7 Level Prefix: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for SceneID: 5 Level Prefix: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for SceneID: 6 Level Prefix: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for AllocatedID: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for AllocatedID: 0
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for AllocatedID: 2
+ 
+(Filename:  Line: 2484)
+
+New scope index 0 is now in scope for AllocatedID: 1
+ 
+(Filename:  Line: 2484)
+
+Sent initalization to player 1
+ 
+(Filename:  Line: 2484)
+
+Sent host update to master server with identifier 0
+ 
+(Filename:  Line: 2484)
+
+Received identifier 0 from master server
+ 
+(Filename:  Line: 2484)
+
+Registration shit succeeded
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Added RPC '__RPCNetworkInstantiate' to buffer.
+ 
+(Filename:  Line: 2484)
+
+A client has disconnected from this server. Player ID 1, IP 192.168.1.6:58706
+ 
+(Filename:  Line: 2484)
+
+Sent host update to master server with identifier 0
+ 
+(Filename:  Line: 2484)
+
+Received identifier 0 from master server
+ 
+(Filename:  Line: 2484)
+
+Registration shit succeeded
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

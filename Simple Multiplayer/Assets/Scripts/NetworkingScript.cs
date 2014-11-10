@@ -55,34 +55,63 @@ public class NetworkingScript : MonoBehaviour {
         Network.Instantiate(Resources.Load("Prefabs/SamplePlayer"), position, Quaternion.identity, 0);
     }
 
+    void OnPlayerDisconnect(NetworkPlayer player)
+    {
+        Network.RemoveRPCs(player);
+        Network.DestroyPlayerObjects(player);
+    }
 
-	void OnGUI(){
-
-        if (Network.isClient || Network.isServer)
+    void OnApplicationQuit()
+    {
+        if (Network.isServer)
         {
-            return;
+            Network.Disconnect(200);
+            MasterServer.UnregisterHost();
         }
-
-		if(GUI.Button(new Rect(25f,25f, 150f,30f),"Start Server")){
-			StartServer();
-		}
-
-		if(GUI.Button(new Rect(25f,65f, 150f,30f),"Refresh Server List")){
-			StartCoroutine("RefreshHostList");
-		}
-
-        if (hostData != null)
+        if (Network.isClient)
         {
-            for (int i = 0; i < hostData.Length; i++)
+            Network.Disconnect(200);
+        }
+    }
+
+    void OnGUI()
+    {
+        if (Network.isClient)
+        {
+            if (GUI.Button(new Rect(25f, 25f, 150f, 30f), "Spawn Player"))
             {
-                if(GUI.Button(new Rect(Screen.width/2, 65f + (30f * i),300f, 30f), hostData[i].gameName))
-                {
-                    Network.Connect(hostData[i]);
-                    Debug.Log("Dat Shit Connected");
-                    
-                }
+                SpawnPlayer();
             }
         }
 
-	}
+
+
+        if (!Network.isClient && !Network.isServer)
+        {
+
+            if (GUI.Button(new Rect(25f, 25f, 150f, 30f), "Start Server"))
+            {
+                StartServer();
+            }
+
+            if (GUI.Button(new Rect(25f, 65f, 150f, 30f), "Refresh Server List"))
+            {
+                StartCoroutine("RefreshHostList");
+            }
+
+            if (hostData != null)
+            {
+                for (int i = 0; i < hostData.Length; i++)
+                {
+                    if (GUI.Button(new Rect(Screen.width / 2, 65f + (30f * i), 300f, 30f), hostData[i].gameName))
+                    {
+                        Network.Connect(hostData[i]);
+                        Debug.Log("Dat Shit Connected");
+
+                    }
+                }
+            }
+
+        }
+    }
 }
