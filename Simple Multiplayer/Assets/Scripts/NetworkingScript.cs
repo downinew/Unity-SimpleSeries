@@ -11,7 +11,7 @@ public class NetworkingScript : MonoBehaviour {
 
 	private void StartServer(){
 		//First is the numOfPlayers
-		Network.InitializeServer(16, 25002, false);
+		Network.InitializeServer(4, 25002, false);
 		MasterServer.RegisterHost(registerGameName, "Simple Multiplayer: Beginning", "This is my first try at a multiplayer game!");
 	}
 

@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
     CharacterController cc;
-    Camera playerCamera;
+    public Camera playerCamera;
     Transform playerTransform;
 
 
@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cc = GetComponent<CharacterController>();
-        playerCamera = GetComponent<Camera>();
         playerTransform = cc.transform;
+        Screen.lockCursor = true;
 	}
 	
 	// Update is called once per frame
@@ -33,12 +33,9 @@ public class PlayerMovement : MonoBehaviour {
     {
 
         float facingMovement = Input.GetAxis("Vertical") * movementSpeed;
-        float sideMovement = Input.GetAxis("Horizontal") * movementSpeed;
-        
+        float sideMovement = Input.GetAxis("Horizontal") * movementSpeed;   
 
         Vector3 speed = new Vector3(sideMovement, 0, facingMovement);
-
-        cc.Move(speed * Time.deltaTime);
 
         float lookX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float lookY = Input.GetAxis("Mouse Y") * mouseSensitivity;
@@ -49,6 +46,12 @@ public class PlayerMovement : MonoBehaviour {
         // Camera and player rotation
         playerTransform.Rotate(0, lookX, 0);
         playerCamera.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
+
+        // This is needed in order to keep the character moving in the desired direction
+        speed = playerTransform.rotation * speed;
+
+        cc.Move(speed * Time.deltaTime);
+
     }
 
 
