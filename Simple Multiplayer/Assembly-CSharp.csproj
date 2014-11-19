@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\EnableCamera.cs" />
      <Compile Include="Assets\Scripts\NetworkingScript.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Shoot_Target.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

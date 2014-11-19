@@ -10,7 +10,7 @@ Platform assembly: E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Dat
 Loading E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\GitHub\Unity-SimpleSeries\Simple Multiplayer\TwoPlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
+- Completed reload, in  0.028 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -61,7 +61,7 @@ Registration shit succeeded
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-New connection established (192.168.1.6:58706)
+New connection established (192.168.1.6:51972)
  
 (Filename:  Line: 2484)
 
@@ -89,11 +89,11 @@ New scope index 0 is now in scope for AllocatedID: 0
  
 (Filename:  Line: 2484)
 
-New scope index 0 is now in scope for AllocatedID: 2
+New scope index 0 is now in scope for AllocatedID: 1
  
 (Filename:  Line: 2484)
 
-New scope index 0 is now in scope for AllocatedID: 1
+New scope index 0 is now in scope for AllocatedID: 2
  
 (Filename:  Line: 2484)
 
@@ -101,23 +101,7 @@ Sent initalization to player 1
  
 (Filename:  Line: 2484)
 
-Sent host update to master server with identifier 0
- 
-(Filename:  Line: 2484)
-
-Received identifier 0 from master server
- 
-(Filename:  Line: 2484)
-
-Registration shit succeeded
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
 Added RPC '__RPCNetworkInstantiate' to buffer.
- 
-(Filename:  Line: 2484)
-
-A client has disconnected from this server. Player ID 1, IP 192.168.1.6:58706
  
 (Filename:  Line: 2484)
 

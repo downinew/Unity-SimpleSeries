@@ -7,11 +7,11 @@ public class NetworkingScript : MonoBehaviour {
 	float refreshRequestLength = 3.0f;
 	HostData[] hostData;
     public GameObject spawnPoint;
-
+    public bool spawned = false;
 
 	private void StartServer(){
 		//First is the numOfPlayers
-		Network.InitializeServer(4, 25002, false);
+		Network.InitializeServer(16, 25002, false);
 		MasterServer.RegisterHost(registerGameName, "Simple Multiplayer: Beginning", "This is my first try at a multiplayer game!");
 	}
 
@@ -76,11 +76,12 @@ public class NetworkingScript : MonoBehaviour {
 
     void OnGUI()
     {
-        if (Network.isClient)
+        if (Network.isClient && !spawned)
         {
             if (GUI.Button(new Rect(25f, 25f, 150f, 30f), "Spawn Player"))
             {
                 SpawnPlayer();
+                spawned = true;
             }
         }
 
